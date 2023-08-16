@@ -1,0 +1,159 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 7,
+    "passes": 1,
+    "pending": 0,
+    "failures": 6,
+    "start": "2023-08-16T02:00:19.906Z",
+    "end": "2023-08-16T02:00:20.326Z",
+    "duration": 420
+  },
+  "tests": [
+    {
+      "title": "returns an employee with the original key value pairs and the new key value pair",
+      "fullTitle": "employees updateEmployeeWithKeyAndValue(employee, key, value) returns an employee with the original key value pairs and the new key value pair",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "it does not modify the original employee, but rather returns a clone with the new data",
+      "fullTitle": "employees updateEmployeeWithKeyAndValue(employee, key, value) it does not modify the original employee, but rather returns a clone with the new data",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '11 Broadway' to equal undefined",
+        "showDiff": true,
+        "actual": "11 Broadway",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '11 Broadway' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:23:44)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    },
+    {
+      "title": "updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee",
+      "fullTitle": "employees destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyUpdateEmployeeWithKeyAndValue is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyUpdateEmployeeWithKeyAndValue is not defined"
+      }
+    },
+    {
+      "title": "deletes `key` from a clone of employee and returns the new employee (it is non-destructive)",
+      "fullTitle": "employees deleteFromEmployeeByKey(employee, key) deletes `key` from a clone of employee and returns the new employee (it is non-destructive)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: deleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:43:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "deleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "does not modify the original employee (it is non-destructive)",
+      "fullTitle": "employees deleteFromEmployeeByKey(employee, key) does not modify the original employee (it is non-destructive)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: deleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:50:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "deleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "returns employee without the deleted key/value pair",
+      "fullTitle": "employees destructivelyDeleteFromEmployeeByKey(employee, key) returns employee without the deleted key/value pair",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyDeleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:58:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyDeleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "modifies the original employee",
+      "fullTitle": "employees destructivelyDeleteFromEmployeeByKey(employee, key) modifies the original employee",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyDeleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:64:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyDeleteFromEmployeeByKey is not defined"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "it does not modify the original employee, but rather returns a clone with the new data",
+      "fullTitle": "employees updateEmployeeWithKeyAndValue(employee, key, value) it does not modify the original employee, but rather returns a clone with the new data",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '11 Broadway' to equal undefined",
+        "showDiff": true,
+        "actual": "11 Broadway",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '11 Broadway' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:23:44)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    },
+    {
+      "title": "updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee",
+      "fullTitle": "employees destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyUpdateEmployeeWithKeyAndValue is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyUpdateEmployeeWithKeyAndValue is not defined"
+      }
+    },
+    {
+      "title": "deletes `key` from a clone of employee and returns the new employee (it is non-destructive)",
+      "fullTitle": "employees deleteFromEmployeeByKey(employee, key) deletes `key` from a clone of employee and returns the new employee (it is non-destructive)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: deleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:43:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "deleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "does not modify the original employee (it is non-destructive)",
+      "fullTitle": "employees deleteFromEmployeeByKey(employee, key) does not modify the original employee (it is non-destructive)",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: deleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:50:7)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "deleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "returns employee without the deleted key/value pair",
+      "fullTitle": "employees destructivelyDeleteFromEmployeeByKey(employee, key) returns employee without the deleted key/value pair",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyDeleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:58:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyDeleteFromEmployeeByKey is not defined"
+      }
+    },
+    {
+      "title": "modifies the original employee",
+      "fullTitle": "employees destructivelyDeleteFromEmployeeByKey(employee, key) modifies the original employee",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: destructivelyDeleteFromEmployeeByKey is not defined\n    at Context.<anonymous> (test/indexTest.js:64:25)\n    at process.processImmediate (node:internal/timers:476:21)",
+        "message": "destructivelyDeleteFromEmployeeByKey is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns an employee with the original key value pairs and the new key value pair",
+      "fullTitle": "employees updateEmployeeWithKeyAndValue(employee, key, value) returns an employee with the original key value pairs and the new key value pair",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
